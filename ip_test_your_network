@@ -1,0 +1,15 @@
+<?php
+
+echo  "REMOTE_ADDR: ".$_SERVER['REMOTE_ADDR'];
+echo  "<br>time: ";
+echo  $_SERVER['REQUEST_TIME'];
+echo  "<br>";
+if(isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+echo  "REMOTE_ADDR: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
+echo  "<br>";
+if(isset($_SERVER['HTTP_CLIENT_IP']))
+echo  "REMOTE_ADDR: ".$_SERVER['HTTP_CLIENT_IP'];
+
+phpinfo();
+
+php?>
