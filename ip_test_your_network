@@ -1,5 +1,7 @@
 <?php
 
+echo "http://phptester.net/";
+
 echo  "REMOTE_ADDR: ".$_SERVER['REMOTE_ADDR'];
 echo  "<br>time: ";
 echo  $_SERVER['REQUEST_TIME'];
